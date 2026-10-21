@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Dying Book</title>
+<meta name="author"
+      content="Carla del Moral, Adrian Menendez and Cristina Jimenez">
+
+<meta name="description"
+      content="An interactive fiction exploring the connections between the book and the human body. A story of transformation, sickness, death and possible rebirth.">
+
+<meta name="copyright"
+      content="© 2017 Carla Andrea del Moral Suarez, Adrian Menendez de la Cuesta Gonzalez and Cristina Jimenez Barranquero. All rights reserved.">
+<style>
+* { box-sizing: border-box; }
+:root { color-scheme: light; }
+body { margin: 0; background: #faf7f0; color: #292722; font-family: Georgia, serif; }
+.app { display: flex; flex-direction: column; height: 100vh; height: 100dvh; }
+header { flex: none; text-align: center; padding: max(8px, env(safe-area-inset-top)) 12px 0; }
+h1 { margin: 0; font-size: clamp(20px, 4vw, 30px); font-weight: normal; }
+nav { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; justify-content: center; padding: 8px; }
+button { min-height: 44px; min-width: 44px; border: 1px solid #bdb5a7; border-radius: 6px; padding: 8px 12px; background: #fffdf8; color: inherit; font: 14px system-ui, sans-serif; cursor: pointer; touch-action: manipulation; }
+button:disabled { opacity: .4; cursor: default; }
+button:focus-visible, a:focus-visible { outline: 3px solid #765d3b; outline-offset: 2px; }
+#page-label { min-width: 70px; font: 13px system-ui, sans-serif; }
+#stage { flex: 1; min-height: 0; overflow: auto; padding: 8px; overscroll-behavior: contain; }
+#paper { position: relative; margin: 0 auto; background: white; box-shadow: 0 2px 12px #0001; }
+iframe { display: block; position: absolute; top: 0; left: 0; width: 1200px; height: 1600px; border: 0; transform-origin: top left; background: white; }
+#status { margin: 0; padding: 0 12px 6px; text-align: center; font: 13px system-ui, sans-serif; }
+footer { max-width: 850px; margin: auto; padding: 20px; padding-bottom: max(20px, env(safe-area-inset-bottom)); text-align: center; font: 12px/1.6 system-ui, sans-serif; color: #625c53; }
+@media (max-width: 480px) { button { padding: 8px; } nav { gap: 4px; } }
+@media (max-height: 480px) and (orientation: landscape) { h1 { display: none; } }
+</style>
+</head>
+<body>
+<div class="app">
+<header>
+<h1>The Dying Book</h1>
+<nav aria-label="Reading controls">
+<button id="previous" type="button">← Previous</button>
+<button id="contents" type="button">Contents</button>
+<span id="page-label" aria-live="polite">Page 1 / 12</span>
+<button id="next" type="button">Next →</button>
+<button id="zoom-out" type="button" aria-label="Zoom out">−</button>
+<button id="zoom-in" type="button" aria-label="Zoom in">+</button>
+<button id="fit" type="button">Fit page</button>
+</nav>
+</header>
+<p id="status" role="status">Loading the book…</p>
+<div id="stage" role="region" aria-label="Scrollable book page" tabindex="0">
+<div id="paper">
+<iframe id="book-frame" title="The Dying Book — interactive page" src="OEBPS/assets/1/page.xhtml" allow="autoplay; fullscreen" allowfullscreen></iframe>
+</div>
+</div>
+</div>
+<footer>
+<p>© 2026 Carla Andrea del Moral Suarez, Adrian Menendez de la Cuesta Gonzalez and Cristina Jimenez Barranquero. All rights reserved.</p>
+<p>This book is made available for personal reading. Except as permitted by applicable law, reproduction, redistribution, adaptation or commercial use requires prior written permission from the respective copyright holders.</p>
+<p>All rights in the original reader code are reserved. Third-party libraries retain their respective licenses. This notice does not limit rights under those licenses or GitHub’s Terms of Service.</p>
+</footer>
+<script>
+(function () {
+  "use strict";
+  const frame = document.getElementById("book-frame");
+  const stage = document.getElementById("stage");
+  const paper = document.getElementById("paper");
+  const status = document.getElementById("status");
+  const previous = document.getElementById("previous");
+  const next = document.getElementById("next");
+  const label = document.getElementById("page-label");
+  const pageRoot = new URL("OEBPS/assets/", window.location.href);
+  let page = 1;
+  let scale = 1;
+  let mode = "fit";
+
+  function updateSize() {
+    const width = Math.max(1, stage.clientWidth - 16);
+    const height = Math.max(1, stage.clientHeight - 16);
+    if (mode === "fit") scale = Math.min(width / 1200, height / 1600, 1);
+    paper.style.width = (1200 * scale) + "px";
+    paper.style.height = (1600 * scale) + "px";
+    frame.style.transform = "scale(" + scale + ")";
+  }
+
+  function updateControls() {
+    label.textContent = "Page " + page + " / 12";
+    previous.disabled = page === 1;
+    next.disabled = page === 12;
+  }
+
+  function goToPage(number) {
+    if (!Number.isInteger(number) || number < 1 || number > 12) return;
+    status.hidden = false;
+    status.textContent = "Loading page…";
+    frame.src = new URL(number + "/page.xhtml", pageRoot).href;
+  }
+
+  frame.addEventListener("load", function () {
+    try {
+      const doc = frame.contentDocument;
+      if (!doc || !doc.querySelector(".SCPage")) throw new Error("Page not found");
+      const url = new URL(frame.contentWindow.location.href);
+      const relative = url.pathname.slice(pageRoot.pathname.length);
+      const match = relative.match(/^(\d+)\/page\.xhtml$/);
+      if (match) page = Number(match[1]);
+      doc.documentElement.style.overflow = "hidden";
+      doc.body.style.overflow = "hidden";
+      frame.title = "The Dying Book — page " + page;
+      status.hidden = true;
+      stage.scrollTop = 0;
+      stage.scrollLeft = 0;
+      updateControls();
+      updateSize();
+    } catch (error) {
+      status.hidden = false;
+      status.textContent = "Page not found. Keep the OEBPS folder beside index.html and open it using Live Server.";
+      console.error(error);
+    }
+  });
+
+  // Compatibility with EPUB pages previously changed to postMessage.
+  window.addEventListener("message", function (event) {
+    if (event.origin !== location.origin || event.source !== frame.contentWindow) return;
+    const data = event.data;
+    if (!data || data.type !== "dying-book:navigate" || typeof data.href !== "string") return;
+    const match = data.href.match(/^\/?OEBPS\/assets\/(\d+)\/page\.xhtml$/);
+    if (match) goToPage(Number(match[1]));
+  });
+
+  previous.onclick = function () { goToPage(page - 1); };
+  next.onclick = function () { goToPage(page + 1); };
+  document.getElementById("contents").onclick = function () { goToPage(2); };
+  document.getElementById("fit").onclick = function () { mode = "fit"; updateSize(); };
+  function zoom(factor) {
+    mode = "manual";
+    scale = Math.max(.1, Math.min(2, scale * factor));
+    updateSize();
+  }
+  document.getElementById("zoom-in").onclick = function () { zoom(1.25); };
+  document.getElementById("zoom-out").onclick = function () { zoom(0.8); };
+  new ResizeObserver(updateSize).observe(stage);
+  updateControls();
+  updateSize();
+})();
+</script>
+<p> © 2017 Carla del Moral, Adrian Menendez and Cristina Jimenez Barranquero.
+  All rights reserved. </p>
+</body>
+</html>

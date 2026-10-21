@@ -1,0 +1,318 @@
+div.SCContent {
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+div.SCOverlay {
+	z-index: 2;
+}
+
+div#obj2981 {
+position: absolute;
+overflow: hidden;
+top: 536px;
+left: 103px;
+width: 850px;
+height: 714px;
+opacity: 1;
+z-index: 0;
+display:block;
+pointer-events: none;
+
+}
+div#obj346 {
+position: absolute;
+overflow: hidden;
+top: 41px;
+left: 45px;
+width: 1113px;
+height: 227px;
+opacity: 1;
+z-index: 5;
+display:block;
+pointer-events: auto;
+
+}
+div#obj348 {
+position: absolute;
+overflow: hidden;
+top: 273px;
+left: 43px;
+width: 1106px;
+height: 171px;
+opacity: 1;
+z-index: 6;
+display:block;
+pointer-events: auto;
+
+}
+div#obj350 {
+position: absolute;
+overflow: hidden;
+top: 435px;
+left: 43px;
+width: 1150px;
+height: 135px;
+opacity: 1;
+z-index: 7;
+display:block;
+pointer-events: auto;
+
+}
+div#obj352 {
+position: absolute;
+overflow: hidden;
+top: 587px;
+left: 382px;
+width: 198px;
+height: 56px;
+opacity: 1;
+z-index: 8;
+display:block;
+pointer-events: auto;
+-webkit-transform: rotate(32.72104deg);
+-moz-transform: rotate(32.72104deg);
+transform: rotate(32.72104deg);
+
+}
+div#obj355 {
+position: absolute;
+overflow: hidden;
+top: 800px;
+left: 156px;
+width: 276px;
+height: 64px;
+opacity: 1;
+z-index: 9;
+display:block;
+pointer-events: auto;
+-webkit-transform: rotate(-8.673174deg);
+-moz-transform: rotate(-8.673174deg);
+transform: rotate(-8.673174deg);
+
+}
+div#obj358 {
+position: absolute;
+overflow: hidden;
+top: 910px;
+left: 128px;
+width: 319px;
+height: 67px;
+opacity: 1;
+z-index: 10;
+display:block;
+pointer-events: auto;
+-webkit-transform: rotate(-12.372deg);
+-moz-transform: rotate(-12.372deg);
+transform: rotate(-12.372deg);
+
+}
+div#obj361 {
+position: absolute;
+overflow: hidden;
+top: 1011px;
+left: 192px;
+width: 324px;
+height: 53px;
+opacity: 1;
+z-index: 11;
+display:block;
+pointer-events: auto;
+-webkit-transform: rotate(-22.18594deg);
+-moz-transform: rotate(-22.18594deg);
+transform: rotate(-22.18594deg);
+
+}
+div#obj364 {
+position: absolute;
+overflow: hidden;
+top: 1116px;
+left: 324px;
+width: 264px;
+height: 47px;
+opacity: 1;
+z-index: 12;
+display:block;
+pointer-events: auto;
+-webkit-transform: rotate(-36.65611deg);
+-moz-transform: rotate(-36.65611deg);
+transform: rotate(-36.65611deg);
+
+}
+div#obj367 {
+position: absolute;
+overflow: hidden;
+top: 543px;
+left: 912px;
+width: 258px;
+height: 666px;
+opacity: 1;
+z-index: 13;
+display:none;
+pointer-events: auto;
+
+}
+div#obj374 {
+position: absolute;
+overflow: hidden;
+top: 1224px;
+left: 912px;
+width: 267px;
+height: 192px;
+opacity: 1;
+z-index: 14;
+display:none;
+pointer-events: auto;
+
+}
+div#obj378 {
+position: absolute;
+overflow: hidden;
+top: 1094px;
+left: 679px;
+width: 207px;
+height: 493px;
+opacity: 1;
+z-index: 15;
+display:none;
+pointer-events: auto;
+
+}
+div#obj382 {
+position: absolute;
+overflow: hidden;
+top: 988px;
+left: 24px;
+width: 369px;
+height: 734px;
+opacity: 1;
+z-index: 16;
+display:none;
+pointer-events: auto;
+
+}
+div#obj386 {
+position: absolute;
+overflow: hidden;
+top: 1218px;
+left: 412px;
+width: 248px;
+height: 379px;
+opacity: 1;
+z-index: 17;
+display:none;
+pointer-events: auto;
+
+}
+div#obj338 {
+position: absolute;
+overflow: hidden;
+top: 410px;
+left: 85px;
+width: 1117px;
+height: 874px;
+opacity: 1;
+z-index: 1;
+display:block;
+pointer-events: none;
+
+}
+img#obj338_img {
+	position: relative;
+	left: 0px;
+	top: 0px;
+	width: 1117px;
+	height: 874px;
+}
+div#obj340 {
+position: absolute;
+overflow: hidden;
+top: 2px;
+left: 4px;
+width: 124px;
+height: 1599px;
+opacity: 1;
+z-index: 2;
+display:block;
+pointer-events: none;
+
+}
+img#obj340_img {
+	position: relative;
+	left: 0px;
+	top: 0px;
+	width: 124px;
+	height: 1599px;
+}
+div#obj342 {
+position: absolute;
+overflow: hidden;
+top: 0px;
+left: 119px;
+width: 1083px;
+height: 428px;
+opacity: 1;
+z-index: 3;
+display:block;
+pointer-events: none;
+
+}
+img#obj342_img {
+	position: relative;
+	left: 0px;
+	top: 0px;
+	width: 1083px;
+	height: 428px;
+}
+div#obj344 {
+position: absolute;
+overflow: hidden;
+top: 1260px;
+left: 5px;
+width: 1199px;
+height: 336px;
+opacity: 1;
+z-index: 4;
+display:block;
+pointer-events: none;
+
+}
+img#obj344_img {
+	position: relative;
+	left: 0px;
+	top: 0px;
+	width: 1199px;
+	height: 336px;
+}
+div#obj2878 {
+position: absolute;
+overflow: hidden;
+top: 1482px;
+left: 1054px;
+width: 87px;
+height: 88px;
+opacity: 1;
+z-index: 18;
+display:block;
+pointer-events: auto;
+
+}
+img#obj2878_img {
+	position: relative;
+	left: 0px;
+	top: 0px;
+	width: 87px;
+	height: 88px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

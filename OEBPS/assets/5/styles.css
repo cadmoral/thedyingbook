@@ -1,0 +1,156 @@
+div.SCContent {
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+div.SCOverlay {
+	z-index: 2;
+}
+
+div#obj400 {
+position: absolute;
+overflow: hidden;
+top: 365px;
+left: 64px;
+width: 1106px;
+height: 254px;
+opacity: 1;
+z-index: 3;
+display:block;
+pointer-events: auto;
+
+}
+div#obj402 {
+position: absolute;
+overflow: hidden;
+top: 696px;
+left: 27px;
+width: 637px;
+height: 223px;
+opacity: 1;
+z-index: 4;
+display:block;
+pointer-events: auto;
+
+}
+div#obj406 {
+position: absolute;
+overflow: hidden;
+top: 637px;
+left: 633px;
+width: 549px;
+height: 252px;
+opacity: 1;
+z-index: 5;
+display:block;
+pointer-events: auto;
+-webkit-transform: rotate(-22.58885deg);
+-moz-transform: rotate(-22.58885deg);
+transform: rotate(-22.58885deg);
+
+}
+div#obj409 {
+position: absolute;
+overflow: hidden;
+top: 719px;
+left: 88px;
+width: 1072px;
+height: 337px;
+opacity: 1;
+z-index: 6;
+display:none;
+pointer-events: auto;
+
+}
+div#obj394 {
+position: absolute;
+overflow: hidden;
+top: 435px;
+left: 8px;
+width: 1192px;
+height: 737px;
+opacity: 1;
+z-index: 0;
+display:block;
+pointer-events: none;
+
+}
+img#obj394_img {
+	position: relative;
+	left: 0px;
+	top: 0px;
+	width: 1192px;
+	height: 737px;
+}
+div#obj396 {
+position: absolute;
+overflow: hidden;
+top: 1172px;
+left: 8px;
+width: 1192px;
+height: 429px;
+opacity: 1;
+z-index: 1;
+display:block;
+pointer-events: none;
+
+}
+img#obj396_img {
+	position: relative;
+	left: 0px;
+	top: 0px;
+	width: 1192px;
+	height: 429px;
+}
+div#obj398 {
+position: absolute;
+overflow: hidden;
+top: 4px;
+left: 2px;
+width: 1199px;
+height: 440px;
+opacity: 1;
+z-index: 2;
+display:block;
+pointer-events: none;
+
+}
+img#obj398_img {
+	position: relative;
+	left: 0px;
+	top: 0px;
+	width: 1199px;
+	height: 440px;
+}
+div#obj2876 {
+position: absolute;
+overflow: hidden;
+top: 1482px;
+left: 1054px;
+width: 87px;
+height: 88px;
+opacity: 1;
+z-index: 7;
+display:block;
+pointer-events: auto;
+
+}
+img#obj2876_img {
+	position: relative;
+	left: 0px;
+	top: 0px;
+	width: 87px;
+	height: 88px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

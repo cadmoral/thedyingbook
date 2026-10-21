@@ -1,0 +1,164 @@
+div.SCContent {
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+div.SCOverlay {
+	z-index: 2;
+}
+
+div#obj549 {
+position: absolute;
+overflow: hidden;
+top: 606px;
+left: 58px;
+width: 440px;
+height: 587px;
+opacity: 1;
+z-index: 1;
+display:block;
+pointer-events: auto;
+
+}
+div#obj553 {
+position: absolute;
+overflow: hidden;
+top: 214px;
+left: 285px;
+width: 785px;
+height: 312px;
+opacity: 1;
+z-index: 2;
+display:block;
+pointer-events: auto;
+
+}
+div#obj562 {
+position: absolute;
+overflow: hidden;
+top: 721px;
+left: 569px;
+width: 594px;
+height: 212px;
+opacity: 1;
+z-index: 3;
+display:block;
+pointer-events: auto;
+
+}
+div#obj566 {
+position: absolute;
+overflow: hidden;
+top: 927px;
+left: 508px;
+width: 692px;
+height: 273px;
+opacity: 1;
+z-index: 4;
+display:block;
+pointer-events: auto;
+
+}
+div#obj570 {
+position: absolute;
+overflow: hidden;
+top: 1276px;
+left: 160px;
+width: 1022px;
+height: 306px;
+opacity: 1;
+z-index: 5;
+display:block;
+pointer-events: auto;
+
+}
+div#obj547 {
+position: absolute;
+overflow: hidden;
+top: 0px;
+left: 3px;
+width: 1195px;
+height: 1600px;
+opacity: 1;
+z-index: 0;
+display:block;
+pointer-events: none;
+
+}
+img#obj547_img {
+	position: relative;
+	left: 0px;
+	top: 0px;
+	width: 1195px;
+	height: 1600px;
+}
+div#obj2872 {
+position: absolute;
+overflow: hidden;
+top: 1482px;
+left: 1054px;
+width: 87px;
+height: 88px;
+opacity: 1;
+z-index: 9;
+display:block;
+pointer-events: auto;
+
+}
+img#obj2872_img {
+	position: relative;
+	left: 0px;
+	top: 0px;
+	width: 87px;
+	height: 88px;
+}
+
+
+
+
+
+
+audio#obj574 {
+position: absolute;
+overflow: hidden;
+top: 328px;
+left: 70px;
+width: 256px;
+height: 192px;
+opacity: 1;
+z-index: 6;
+display:block;
+pointer-events: auto;
+
+}
+audio#obj581 {
+position: absolute;
+overflow: hidden;
+top: 370px;
+left: 840px;
+width: 256px;
+height: 192px;
+opacity: 1;
+z-index: 7;
+display:block;
+pointer-events: auto;
+
+}
+audio#obj2107 {
+position: absolute;
+overflow: hidden;
+top: 882px;
+left: 422px;
+width: 256px;
+height: 192px;
+opacity: 1;
+z-index: 8;
+display:block;
+pointer-events: auto;
+
+}
+
+
+
+
+
+

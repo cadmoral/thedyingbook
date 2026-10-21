@@ -1,0 +1,94 @@
+div.SCContent {
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+div.SCOverlay {
+	z-index: 2;
+}
+
+div#obj505 {
+position: absolute;
+overflow: hidden;
+top: 71px;
+left: 102px;
+width: 1008px;
+height: 1464px;
+opacity: 1;
+z-index: 0;
+display:block;
+pointer-events: auto;
+
+}
+div#obj507 {
+position: absolute;
+overflow: hidden;
+top: -1970px;
+left: -1392px;
+width: 5127px;
+height: 5502px;
+opacity: 1;
+z-index: 1;
+display:block;
+pointer-events: auto;
+
+}
+img#obj507_img {
+	position: relative;
+	left: 0px;
+	top: 0px;
+	width: 5127px;
+	height: 5502px;
+}
+div#obj2900 {
+position: absolute;
+overflow: hidden;
+top: 1482px;
+left: 1054px;
+width: 87px;
+height: 88px;
+opacity: 1;
+z-index: 2;
+display:block;
+pointer-events: auto;
+
+}
+img#obj2900_img {
+	position: relative;
+	left: 0px;
+	top: 0px;
+	width: 87px;
+	height: 88px;
+}
+div#obj2976 {
+position: absolute;
+overflow: hidden;
+top: 1360px;
+left: 1054px;
+width: 87px;
+height: 88px;
+opacity: 1;
+z-index: 3;
+display:block;
+pointer-events: auto;
+
+}
+img#obj2976_img {
+	position: relative;
+	left: 0px;
+	top: 0px;
+	width: 87px;
+	height: 88px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,170 @@
+div.SCContent {
+	overflow-x: hidden;
+	overflow-y: scroll;
+-webkit-overflow-scrolling: touch;
+}
+div.SCOverlay {
+	z-index: 2;
+}
+
+div#obj2952 {
+position: absolute;
+overflow: hidden;
+top: 226px;
+left: 70px;
+width: 1084px;
+height: 452px;
+opacity: 1;
+z-index: 0;
+display:block;
+pointer-events: auto;
+
+}
+div#obj2958 {
+position: absolute;
+overflow: hidden;
+top: 52px;
+left: 2px;
+width: 1198px;
+height: 163px;
+opacity: 1;
+z-index: 2;
+display:block;
+pointer-events: auto;
+
+}
+div#obj2961 {
+position: absolute;
+overflow: hidden;
+top: 226px;
+left: 70px;
+width: 1084px;
+height: 1214px;
+opacity: 1;
+z-index: 3;
+display:block;
+pointer-events: auto;
+
+}
+div#obj2956 {
+position: absolute;
+overflow: hidden;
+top: 0px;
+left: 4px;
+width: 1199px;
+height: 1600px;
+opacity: 1;
+z-index: 1;
+display:block;
+pointer-events: none;
+
+}
+img#obj2956_img {
+	position: relative;
+	left: 0px;
+	top: 0px;
+	width: 1199px;
+	height: 1600px;
+}
+div#obj2968 {
+position: absolute;
+overflow: hidden;
+top: 1482px;
+left: 1054px;
+width: 87px;
+height: 88px;
+opacity: 1;
+z-index: 4;
+display:block;
+pointer-events: auto;
+
+}
+img#obj2968_img {
+	position: relative;
+	left: 0px;
+	top: 0px;
+	width: 87px;
+	height: 88px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#countdown_dashboard {
+	display: inline-block;
+	height: 96px;
+}
+.dash {
+	width: 138px;
+	height: 96px;
+	background: transparent url('../folders/countdown/images/dash.png') 0 0 no-repeat;
+	float: left;
+	padding-left: 13px;
+	position: relative;
+	color: #333;
+}
+.weeks_dash {
+	background: transparent url('../folders/countdown/images/dark_weeks_dash.png') 0 0 no-repeat;
+}
+.days_dash {
+	background: transparent url('../folders/countdown/images/dark_days_dash.png') 0 0 no-repeat;
+}
+.hours_dash {
+	background: transparent url('../folders/countdown/images/dark_hours_dash.png') 0 0 no-repeat;
+}
+.minutes_dash {
+	background: transparent url('../folders/countdown/images/dark_minutes_dash.png') 0 0 no-repeat;
+}
+.seconds_dash {
+	background: transparent url('../folders/countdown/images/dark_seconds_dash.png') 0 0 no-repeat;
+}
+.dash .digit {
+	font: bold 52pt Verdana;
+	font-weight: bold;
+	float: left;
+	width: 59px;
+	text-align: center;
+	position: relative;
+}
+.dash_title {
+	display: none;
+}
+
+/* Interactive letter: all coordinates use the original 1200 × 1600 canvas. */
+div.SCContent { overflow: hidden; }
+div#obj2952 { pointer-events: none; }
+div#obj2958 { pointer-events: none; text-align: center; }
+#time-caption { margin: 0 0 8px; font: 26px/1.3 "Courier New", monospace; }
+#time-left { margin: 0; font: 64px/1 "Courier New", monospace; }
+div#obj2961 { height: 1214px; overflow: visible; }
+#letter-form { height: 100%; display: flex; flex-direction: column; gap: 24px; margin: 0; }
+#letter-prompt { flex: none; font: 46px/1.4 "Courier New", monospace; color: #26231f; }
+#reader-letter { box-sizing: border-box; display: block; flex: 1; min-height: 0; width: 100%; margin: 0; padding: 26px; border: 2px dashed #8f877a; border-radius: 6px; background: rgba(255,255,255,.32); color: #26231f; font: 42px/1.5 "Courier New", monospace; resize: none; }
+#reader-letter::placeholder { color: #6f685e; opacity: 1; }
+#reader-letter:focus { outline: 4px solid #6f685e; outline-offset: 4px; }
+#letter-feedback { min-height: 40px; margin: 0; font: 28px/1.4 "Courier New", monospace; }
+#send-letter { align-self: center; min-height: 144px; padding: 28px 64px; border: 2px solid #524a40; border-radius: 6px; background: rgba(250,247,240,.9); color: #26231f; font: 40px/1.3 "Courier New", monospace; cursor: pointer; touch-action: manipulation; }
+#send-letter:focus-visible, #letter-ending a:focus-visible { outline: 4px solid #524a40; outline-offset: 6px; }
+#send-letter:disabled { cursor: default; opacity: .6; }
+#letter-dust { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+.dust-grain { position: absolute; width: 5px; height: 5px; border-radius: 50%; background: #62594f; opacity: 0; animation: drift-to-dust 1.3s ease-out forwards; }
+#letter-form.is-dissolving { pointer-events: none; animation: words-to-dust 1.3s ease-out forwards; }
+#letter-ending[hidden], #letter-form[hidden] { display: none !important; }
+#letter-ending { padding: 150px 28px 0; text-align: center; font-family: "Courier New", monospace; animation: ending-appears 1.2s ease both; }
+#ending-title { font-size: 66px; line-height: 1.35; font-weight: normal; margin: 0 0 56px; }
+#letter-ending p { font-size: 60px; line-height: 1.4; margin: 0 0 48px; }
+#letter-ending .ending-whisper { font-size: 36px; color: #62594f; }
+#letter-ending a { display: inline-block; margin-top: 72px; padding: 36px; color: #373028; text-underline-offset: 8px; font-size: 36px; }
+@keyframes words-to-dust { to { opacity: 0; filter: blur(12px); transform: translateY(-20px); } }
+@keyframes drift-to-dust { 15% { opacity: .65; } to { opacity: 0; transform: translate(var(--dx), -140px); } }
+@keyframes ending-appears { from { opacity: 0; } to { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) { #letter-form.is-dissolving { animation: none; opacity: 0; } .dust-grain { display: none; } #letter-ending { animation: none; } }

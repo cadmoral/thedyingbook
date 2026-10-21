@@ -1,0 +1,167 @@
+div.SCContent {
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+div.SCOverlay {
+	z-index: 2;
+}
+
+
+div#obj2055 {
+position: absolute;
+overflow: hidden;
+top: 1145px;
+left: 1px;
+width: 1194px;
+height: 450px;
+opacity: 1;
+z-index: 0;
+display:block;
+pointer-events: none;
+
+}
+img#obj2055_img {
+	position: relative;
+	left: 0px;
+	top: 0px;
+	width: 1194px;
+	height: 450px;
+}
+div#obj2066 {
+position: absolute;
+overflow: hidden;
+top: 788px;
+left: 485px;
+width: 1322px;
+height: 102px;
+opacity: 1;
+z-index: 2;
+display:block;
+pointer-events: none;
+-webkit-transform: rotate(90.46205deg);
+-moz-transform: rotate(90.46205deg);
+transform: rotate(90.46205deg);
+
+}
+img#obj2066_img {
+	position: relative;
+	left: 0px;
+	top: 0px;
+	width: 1322px;
+	height: 102px;
+}
+div#obj2053 {
+position: absolute;
+overflow: hidden;
+top: 3px;
+left: 5px;
+width: 1190px;
+height: 433px;
+opacity: 1;
+z-index: 3;
+display:block;
+pointer-events: none;
+
+}
+img#obj2053_img {
+	position: relative;
+	left: 0px;
+	top: 0px;
+	width: 1190px;
+	height: 433px;
+}
+div#obj2068 {
+position: absolute;
+overflow: hidden;
+top: 748px;
+left: -607px;
+width: 1322px;
+height: 102px;
+opacity: 1;
+z-index: 4;
+display:block;
+pointer-events: none;
+-webkit-transform: rotate(90.46205deg);
+-moz-transform: rotate(90.46205deg);
+transform: rotate(90.46205deg);
+
+}
+img#obj2068_img {
+	position: relative;
+	left: 0px;
+	top: 0px;
+	width: 1322px;
+	height: 102px;
+}
+div#obj2889 {
+position: absolute;
+overflow: hidden;
+top: 1482px;
+left: 1054px;
+width: 87px;
+height: 88px;
+opacity: 1;
+z-index: 5;
+display:block;
+pointer-events: auto;
+
+}
+img#obj2889_img {
+	position: relative;
+	left: 0px;
+	top: 0px;
+	width: 87px;
+	height: 88px;
+}
+div#obj2972 {
+position: absolute;
+overflow: hidden;
+top: 1360px;
+left: 1054px;
+width: 87px;
+height: 88px;
+opacity: 1;
+z-index: 6;
+display:block;
+pointer-events: auto;
+
+}
+img#obj2972_img {
+	position: relative;
+	left: 0px;
+	top: 0px;
+	width: 87px;
+	height: 88px;
+}
+
+
+
+div#obj2057 {
+position: absolute;
+overflow: hidden;
+top: 219px;
+left: 36px;
+width: 1148px;
+height: 1110px;
+opacity: 1;
+z-index: 1;
+display:block;
+pointer-events: auto;
+
+}
+div#obj2057 .translated {
+	position: absolute;
+	top: 0px;
+	left: 1148px;
+	width: 100%;
+	height: 100%;
+}
+
+
+
+
+
+
+
+
+
